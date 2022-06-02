@@ -1,0 +1,22 @@
+{
+  "name": "all-round-calculator",
+  "version": "1.0.0",
+  "description": "All types of calculator in one library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Susmita-Dey/all-round-calculator.git"
+  },
+  "keywords": [
+    "calculator"
+  ],
+  "author": "Susmita Dey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Susmita-Dey/all-round-calculator/issues"
+  },
+  "homepage": "https://github.com/Susmita-Dey/all-round-calculator#readme"
+}
