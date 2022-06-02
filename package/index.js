@@ -299,16 +299,16 @@ function getCurrency(currencyFrom, currencyTo, value) {
 
 
 // Export functions
-export default doAdd;
-export default doAddN;
-export default doSub;
-export default doPositiveSub;
-export default doMul;
-export default doMulN;
-export default doDiv;
-export default doMod;
-export default calcAge;
-export default calcLoan;
-export default TimeCalculator;
-export default getCurrency;
+module.exports = doAdd;
+module.exports = doAddN;
+module.exports = doSub;
+module.exports = doPositiveSub;
+module.exports = doMul;
+module.exports = doMulN;
+module.exports = doDiv;
+module.exports = doMod;
+module.exports = calcAge;
+module.exports = calcLoan;
+module.exports = TimeCalculator;
+module.exports = getCurrency;
 
