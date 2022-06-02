@@ -297,17 +297,16 @@ function getCurrency(currencyFrom, currencyTo, value) {
   return Math.round(result);
 }
 
-
-// Export functions 
-export default doAdd;
-export default doAddN;
-export default doSub;
-export default doPositiveSub;
-export default doMul;
-export default doMulN;
-export default doDiv;
-export default doMod;
-export default calcAge;
-export default calcLoan;
-export default TimeCalculator;
-export default getCurrency;
+// Export functions
+module.export = doAdd;
+module.export = doAddN;
+module.export = doSub;
+module.export = doPositiveSub;
+module.export = doMul;
+module.export = doMulN;
+module.export = doDiv;
+module.export = doMod;
+module.export = calcAge;
+module.export = calcLoan;
+module.export = TimeCalculator;
+module.export = getCurrency;
