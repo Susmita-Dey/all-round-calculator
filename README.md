@@ -13,7 +13,21 @@ An npm library package to calculate everything you want.
 - Any contributions you make are **greatly appreciated**.
 - Check out our [contribution guidelines](/CONTRIBUTING.md) for more information.
 
+
+## 🛡️ License
+
+LinkFree is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 💪 Thanks to all Contributors
+
+Thanks a lot for spending your time helping LinkFree grow. Thanks a lot! Keep rocking 🍻
+
+[![Contributors](https://contrib.rocks/image?repo=Susmita-Dey/all-round-calculator)](https://github.com/Susmita-Dey/all-round-calculator/graphs/contributors)
+
+## 🙏 Support
+
+This project needs a ⭐️ from you. Don't forget to leave a star ⭐️
 <!-- <iframe src="https://github.com/sponsors/Susmita-Dey/button" title="Sponsor Susmita-Dey" height="35" width="116" style="border: 0;"></iframe> -->
-<p align="center">
+<!-- <p align="center">
   Show some ❤ by starring the repository.
-</p>
+</p> -->
