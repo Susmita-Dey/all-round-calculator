@@ -67,7 +67,7 @@ function calcLoan(amount, rate, month) {
 }
 
 // Calculate time
-function TimeCalculator(seconds) {
+function timeCalc(seconds) {
   let y = Math.floor(seconds / 31536000);
   let mo = Math.floor((seconds % 31536000) / 2628000);
   let d = Math.floor(((seconds % 31536000) % 2628000) / 86400);
@@ -295,4 +295,4 @@ function getCurrency(currencyFrom, currencyTo, value) {
 }
 
 // Export functions
-module.exports = {doAdd,doAddN,doSub, doPositiveSub,doMul,doMulN,doDiv,doMod,calcAge,calcLoan,TimeCalculator,getCurrency};
+module.exports = {doAdd,doAddN,doSub,doPositiveSub,doMul,doMulN,doDiv,doMod,calcAge,calcLoan,timeCalc,getCurrency};
