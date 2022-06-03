@@ -1,20 +1,43 @@
-// Adding 2 numbers
+/**
+  * Returns the sum of two numbers
+  *
+  * @param {number} num1 The first number to be added.
+  * @param {number} num2 The Second Number to be added.
+  * @return {number} sum of the two numbers
+*/
 function doAdd(num1, num2) {
   return num1 + num2;
 }
 
-// Adding n numbers
+/**
+  * Returns the sum of the numbers in an array
+  *
+  * @param {array} nums An array of numbers
+  * @return {number} sum of all the numbers in an array
+*/
 function doAddN(nums) {
   const numbers = nums.reduce((totalVal, currentVal) => totalVal + currentVal, 0)
   return numbers
 }
 
-// Subtracting 2 numbers
+/**
+  * Returns the subtraction of two numbers
+  *
+  * @param {number} num1 First number 
+  * @param {number} num2 Second number
+  * @return The subtraction of the two numbers
+*/
 function doSub(num1, num2) {
   return num1 - num2;
 }
 
-// Making positive Subtraction
+/**
+  * Returns the positive subtraction of two numbers by checking if the first number is bigger or not
+  *
+  * @param {number} num1 First number
+  * @param {number} num2 Second number
+  * @return {number} The positive subtraction of the two numbers
+*/
 function doPositiveSub(num1, num2) {
   if (num1 > num2) {
     return num1 - num2;
@@ -23,12 +46,23 @@ function doPositiveSub(num1, num2) {
   }
 }
 
-// Multiplying 2 numbers
+/**
+  * Multiplication of two numbers
+  *
+  * @param {number} First number
+  * @param {number} Second number
+  * @return {number} The muliplication of the two numbers
+*/
 function doMul(num1, num2) {
   return num1 * num2;
 }
 
-// Multiplying n numbers
+/**
+  * Multiplication of all numbers in the array
+  * 
+  * @param {array} Array of numbers
+  * @return {number} Multiplication of all the numbers
+*/
 function doMulN(nums) {
   let multiply = 1;
   for (let index = 0; index < nums.length; index++) {
@@ -38,16 +72,35 @@ function doMulN(nums) {
 }
 
 // Dividing 2 numbers
+/**
+  * Division of two numbers
+  *
+  * @param {number} num1 The first number
+  * @param {number} num2 The second number
+  * @return {number} The Division of the two numbers
+*/
 function doDiv(num1, num2) {
   return num1 / num2;
 }
 
 // Getting the modulus
+/**
+  * Modulus of two numbers
+  *
+  * @param {number} num1 The first number
+  * @param {number} num2 The second number
+  * @return {number} The modulus of the two numbers
+*/
 function doMod(num1, num2) {
   return num1 % num2;
 }
 
-// Calculating the age of a person
+/**
+  * Calculating the age
+  *
+  * @param {String} dateString The date of birth should be in this format 'MM-DD-YY'
+  * @return The age of the person
+*/
 function calcAge(dateString) {
   let today = new Date();
   let birthDate = new Date(dateString);
@@ -59,14 +112,26 @@ function calcAge(dateString) {
   return age;
 }
 
-// Calculate total amount of loan
+/**
+  * Calculating the total amount of loan
+  *
+  * @param {number} amount The amount
+  * @param {number} rate The rate 
+  * @param {number} month The number of months
+  * @return {number} Total amount of loan
+*/
 function calcLoan(amount, rate, month) {
   let interest = (amount * (rate * 0.01)) / month;
   let total_amount = amount / month + interest;
   return ("Total Amount: " + total_amount);
 }
 
-// Calculate time
+/**
+  * Calculating time
+  *
+  * @param {number} seconds The number of seconds
+  * @return {String} The date
+*/
 function timeCalc(seconds) {
   let y = Math.floor(seconds / 31536000);
   let mo = Math.floor((seconds % 31536000) / 2628000);
@@ -85,6 +150,14 @@ function timeCalc(seconds) {
 }
 
 // Currency Converter
+/**
+  * Converts a currency
+  *
+  * @param {String} currencyFrom The currency you are converting from
+  * @param {String} currencyTo The currency you are changing to
+  * @param {number} value The value you are converting to
+  * @return {number} The converted currency
+*/
 function getCurrency(currencyFrom, currencyTo, value) {
   let c1 = currencyFrom;
   let c2 = currencyTo;
