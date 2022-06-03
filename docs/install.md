@@ -1,3 +1,10 @@
+## Prerequisites 👇
+
+Before installation, please make sure you have already installed the following tools:
+
+- [Git](https://git-scm.com/downloads)
+- [NodeJs](https://nodejs.org/en/download/)
+
 # Installation Guidelines
 
 1. Create a folder of your project.    `mkdir <folder-name>`
