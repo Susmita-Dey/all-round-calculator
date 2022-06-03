@@ -5,11 +5,8 @@ function doAdd(num1, num2) {
 
 // Adding n numbers
 function doAddN(nums) {
-  let sum = 0;
-  for (let index = 0; index < nums.length; index++) {
-    sum += nums[index];
-  }
-  return sum;
+  const numbers = nums.reduce((totalVal, currentVal) => totalVal + currentVal, 0)
+  return numbers
 }
 
 // Subtracting 2 numbers
@@ -33,7 +30,7 @@ function doMul(num1, num2) {
 
 // Multiplying n numbers
 function doMulN(nums) {
-  let multiply = 0;
+  let multiply = 1;
   for (let index = 0; index < nums.length; index++) {
     multiply *= nums[index];
   }
@@ -65,8 +62,8 @@ function calcAge(dateString) {
 // Calculate total amount of loan
 function calcLoan(amount, rate, month) {
   let interest = (amount * (rate * 0.01)) / month;
-  let total_amount = amount / months + interest;
-  return total_amount;
+  let total_amount = amount / month + interest;
+  return ("Total Amount: " + total_amount);
 }
 
 // Calculate time
@@ -297,7 +294,5 @@ function getCurrency(currencyFrom, currencyTo, value) {
   return Math.round(result);
 }
 
-
 // Export functions
 module.exports = {doAdd,doAddN,doSub, doPositiveSub,doMul,doMulN,doDiv,doMod,calcAge,calcLoan,TimeCalculator,getCurrency};
-
