@@ -66,7 +66,7 @@ function calcAge(dateString) {
 function calcLoan(amount, rate, month) {
   let interest = (amount * (rate * 0.01)) / month;
   let total_amount = amount / month + interest;
-  return 'Total Amount: ' + total_amount;
+  return "Total Amount: " + total_amount;
 }
 
 // Calculate time
@@ -78,12 +78,12 @@ function timeCalc(seconds) {
   let m = Math.floor((seconds % 3600) / 60);
   let s = Math.floor(seconds % 60);
 
-  let yDisplay = y > 0 ? y + (y === 1 ? ' year, ' : ' years, ') : '';
-  let moDisplay = mo > 0 ? mo + (mo === 1 ? ' month, ' : ' months, ') : '';
-  let dDisplay = d > 0 ? d + (d === 1 ? ' day, ' : ' days, ') : '';
-  let hDisplay = h > 0 ? h + (h === 1 ? ' hour, ' : ' hours, ') : '';
-  let mDisplay = m > 0 ? m + (m === 1 ? ' minute ' : ' minutes, ') : '';
-  let sDisplay = s > 0 ? s + (s === 1 ? ' second' : ' seconds ') : '';
+  let yDisplay = y > 0 ? y + (y === 1 ? " year, " : " years, ") : "";
+  let moDisplay = mo > 0 ? mo + (mo === 1 ? " month, " : " months, ") : "";
+  let dDisplay = d > 0 ? d + (d === 1 ? " day, " : " days, ") : "";
+  let hDisplay = h > 0 ? h + (h === 1 ? " hour, " : " hours, ") : "";
+  let mDisplay = m > 0 ? m + (m === 1 ? " minute " : " minutes, ") : "";
+  let sDisplay = s > 0 ? s + (s === 1 ? " second" : " seconds ") : "";
   return yDisplay + moDisplay + dDisplay + hDisplay + mDisplay + sDisplay;
 }
 
@@ -125,201 +125,201 @@ function areaOfEllipse(radiusmMajorAxis, radiusmMinorAxis) {
 function getCurrency(currencyFrom, currencyTo, value) {
   let c1 = currencyFrom;
   let c2 = currencyTo;
-  let finalC = c1 + '-' + c2;
+  let finalC = c1 + "-" + c2;
   let result = 0;
 
   switch (finalC) {
     // Major Currencies
-    case 'USD-EUR':
+    case "USD-EUR":
       result = value * 0.934642;
       break;
 
-    case 'USD-GBP':
+    case "USD-GBP":
       result = value * 0.798108;
       break;
 
-    case 'USD-CNY':
+    case "USD-CNY":
       result = value * 6.6706;
       break;
 
-    case 'USD-JPY':
+    case "USD-JPY":
       result = value * 129.94317;
       break;
 
-    case 'USD-CAD':
+    case "USD-CAD":
       result = value * 1.263022;
       break;
 
-    case 'USD-AUD':
+    case "USD-AUD":
       result = value * 1.385431;
       break;
 
-    case 'EUR-USD':
+    case "EUR-USD":
       result = value * 1.0699284;
       break;
 
-    case 'EUR-GBP':
+    case "EUR-GBP":
       result = value * 0.853918;
       break;
 
-    case 'EUR-CNY':
+    case "EUR-CNY":
       result = value * 7.137064;
       break;
 
-    case 'EUR-JPY':
+    case "EUR-JPY":
       result = value * 139.02988;
       break;
 
-    case 'EUR-CAD':
+    case "EUR-CAD":
       result = value * 1.3513431;
       break;
 
-    case 'EUR-AUD':
+    case "EUR-AUD":
       result = value * 1.4823119;
       break;
 
-    case 'GBP-USD':
+    case "GBP-USD":
       result = value * 1.2529633;
       break;
 
-    case 'GBP-EUR':
+    case "GBP-EUR":
       result = value * 1.1710721;
       break;
 
-    case 'GBP-CNY':
+    case "GBP-CNY":
       result = value * 8.358017;
       break;
 
-    case 'GBP-JPY':
+    case "GBP-JPY":
       result = value * 162.81401;
       break;
 
-    case 'GBP-CAD':
+    case "GBP-CAD":
       result = value * 1.5825202;
       break;
 
-    case 'GBP-AUD':
+    case "GBP-AUD":
       result = value * 1.7358941;
       break;
 
-    case 'CNY-USD':
+    case "CNY-USD":
       result = value * 0.1499116;
       break;
 
-    case 'CNY-EUR':
+    case "CNY-EUR":
       result = value * 0.1401136;
       break;
 
-    case 'CNY-GBP':
+    case "CNY-GBP":
       result = value * 0.1196456;
       break;
 
-    case 'CNY-JPY':
+    case "CNY-JPY":
       result = value * 19.479982;
       break;
 
-    case 'CNY-CAD':
+    case "CNY-CAD":
       result = value * 0.1893416;
       break;
 
-    case 'CNY-AUD':
+    case "CNY-AUD":
       result = value * 0.2076921;
       break;
 
-    case 'JPY-USD':
+    case "JPY-USD":
       result = value * 0.0076957;
       break;
 
-    case 'JPY-EUR':
+    case "JPY-EUR":
       result = value * 0.0071927;
       break;
 
-    case 'JPY-GBP':
+    case "JPY-GBP":
       result = value * 0.006142;
       break;
 
-    case 'JPY-CNY':
+    case "JPY-CNY":
       result = value * 0.0513348;
       break;
 
-    case 'JPY-CAD':
+    case "JPY-CAD":
       result = value * 0.0097198;
       break;
 
-    case 'JPY-AUD':
+    case "JPY-AUD":
       result = value * 0.01066182;
       break;
 
-    case 'CAD-USD':
+    case "CAD-USD":
       result = value * 0.791752;
       break;
 
-    case 'CAD-EUR':
+    case "CAD-EUR":
       result = value * 0.740005;
       break;
 
-    case 'CAD-GBP':
+    case "CAD-GBP":
       result = value * 0.631903;
       break;
 
-    case 'CAD-CNY':
+    case "CAD-CNY":
       result = value * 5.28146;
       break;
 
-    case 'CAD-JPY':
+    case "CAD-JPY":
       result = value * 102.88274;
       break;
 
-    case 'CAD-AUD':
+    case "CAD-AUD":
       result = value * 1.0969176;
       break;
 
-    case 'AUD-USD':
+    case "AUD-USD":
       result = value * 0.721797;
       break;
 
-    case 'AUD-EUR':
+    case "AUD-EUR":
       result = value * 0.674622;
       break;
 
-    case 'AUD-GBP':
+    case "AUD-GBP":
       result = value * 0.576072;
       break;
 
-    case 'AUD-CNY':
+    case "AUD-CNY":
       result = value * 4.814819;
       break;
 
-    case 'AUD-JPY':
+    case "AUD-JPY":
       result = value * 93.79259;
       break;
 
-    case 'AUD-CAD':
+    case "AUD-CAD":
       result = value * 0.911646;
       break;
 
     // All Currencies
-    case 'AED-USD':
+    case "AED-USD":
       result = value * 0.2722533;
       break;
 
-    case 'USD-AED':
+    case "USD-AED":
       result = value * 3.67305;
       break;
 
-    case 'AED-EUR':
+    case "AED-EUR":
       result = value * 0.2544594;
       break;
 
-    case 'EUR-AED':
+    case "EUR-AED":
       result = value * 3.9299;
       break;
 
-    case 'AED-GBP':
+    case "AED-GBP":
       result = value * 0.2172875;
       break;
 
-    case 'GBP-AED':
+    case "GBP-AED":
       result = value * 4.602197;
       break;
 
