@@ -4,8 +4,8 @@
 ### Contribute in public/Profile
 
 - [Git](https://git-scm.com/) 
-- [Basic JavaScript]()
-- [NodeJS](https://www.json.org/json-en.html)
+- [Basic JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [NodeJS](https://nodejs.org/)
 
 ### Contribute in Documents
 
