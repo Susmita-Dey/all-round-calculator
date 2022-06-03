@@ -42,6 +42,11 @@ function doDiv(num1, num2) {
   return num1 / num2;
 }
 
+function doReverse(num) {
+  num *= -1
+  return num
+}
+
 // Getting the modulus
 function doMod(num1, num2) {
   return num1 % num2;
