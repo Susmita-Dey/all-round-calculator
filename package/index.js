@@ -300,4 +300,4 @@ function getCurrency(currencyFrom, currencyTo, value) {
 }
 
 // Export functions
-module.exports = {doAdd,doAddN,doSub,doPositiveSub,doMul,doMulN,doDiv,doMod,calcAge,calcLoan,timeCalc,getCurrency};
+module.exports = {doAdd,doAddN,doSub,doPositiveSub,doMul,doMulN,doDiv,doMod,calcAge,calcLoan,timeCalc,getCurrency, doReverse};
