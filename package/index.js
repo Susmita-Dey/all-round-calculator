@@ -90,7 +90,7 @@ function doReverse(num) {
 }
 
 // add one to input number
-function doInc(num) {
+function doIncr(num) {
   return num + 1;
 }
 
@@ -127,6 +127,12 @@ function toOct(num) {
 
 function toTri(num) {
   return num.toString(3);
+}
+
+// changing number to a string
+
+function toStr(num) {
+return num.toString();
 }
 
 // Getting the modulus
@@ -193,6 +199,28 @@ function timeCalc(seconds) {
   let mDisplay = m > 0 ? m + (m === 1 ? " minute " : " minutes, ") : "";
   let sDisplay = s > 0 ? s + (s === 1 ? " second" : " seconds ") : "";
   return yDisplay + moDisplay + dDisplay + hDisplay + mDisplay + sDisplay;
+}
+
+// rgb to hex. requires splitted values
+
+function rgbToHex(r, g, b) {
+  return "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
+}
+
+// hex to rgb
+
+function hexToRgb(hex) {
+  var shorthandRegex = /^#?([a-f\d])([a-f\d])([a-f\d])$/i;
+  hex = hex.replace(shorthandRegex, function(m, r, g, b) {
+    return r + r + g + g + b + b;
+  });
+
+  var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+  return result ? {
+    r: parseInt(result[1], 16),
+    g: parseInt(result[2], 16),
+    b: parseInt(result[3], 16)
+  } : null;
 }
 
 // Currency Converter
@@ -414,4 +442,4 @@ function getCurrency(currencyFrom, currencyTo, value) {
 }
 
 // Export functions
-module.exports = {doAdd,doAddN,doSub,doPositiveSub,doMul,doMulN,doDiv,doMod,calcAge,calcLoan,timeCalc,getCurrency, doReverse, toHex, toBin, toOct, toTri, toDec, doDecr, doInc};
+module.exports = {doAdd,doAddN,doSub,doPositiveSub,doMul,doMulN,doDiv,doMod,calcAge,calcLoan,timeCalc,getCurrency, doReverse, toHex, toBin, toOct, toTri, toDec, doDecr, doIncr, toStr, rgbToHex, hexToRgb};
