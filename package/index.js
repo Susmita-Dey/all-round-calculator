@@ -1,11 +1,11 @@
-  const {getCurrency}=require('./Functions/Currency')
+const { getCurrency } = require("./Functions/Currency");
 /**
-  * Returns the sum of two numbers
-  *
-  * @param {number} num1 The first number to be added.
-  * @param {number} num2 The Second Number to be added.
-  * @return {number} sum of the two numbers
-*/
+ * Returns the sum of two numbers
+ *
+ * @param {number} num1 The first number to be added.
+ * @param {number} num2 The Second Number to be added.
+ * @return {number} sum of the two numbers
+ */
 function doAdd(num1, num2) {
   return num1 + num2;
 }
@@ -87,9 +87,50 @@ function doDiv(num1, num2) {
   return num1 / num2;
 }
 
+// reversing number from input
 function doReverse(num) {
   num *= -1;
   return num;
+}
+
+// add one to input number
+function doInc(num) {
+  return num + 1;
+}
+
+// decrement input by one
+function doDecr(num) {
+  return num - 1;
+}
+
+// convert number ot decimal
+
+function toDec(num) {
+  return num.toString(10);
+}
+
+// convert number to binary
+
+function toBin(num) {
+  return num.toString(2);
+}
+
+// convert number to hex
+
+function toHex(num) {
+  return num.toString(16);
+}
+
+// convert number to octal
+
+function toOct(num) {
+  return num.toString(8);
+}
+
+// convert number to trinary
+
+function toTri(num) {
+  return num.toString(3);
 }
 
 // Getting the modulus
@@ -158,8 +199,6 @@ function timeCalc(seconds) {
   return yDisplay + moDisplay + dDisplay + hDisplay + mDisplay + sDisplay;
 }
 
-
-
 // Export functions
 module.exports = {
   doAdd,
@@ -175,4 +214,11 @@ module.exports = {
   timeCalc,
   getCurrency,
   doReverse,
+  toHex,
+  toBin,
+  toOct,
+  toTri,
+  toDec,
+  doDecr,
+  doInc,
 };

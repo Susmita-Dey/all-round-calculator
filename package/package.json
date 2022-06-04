@@ -1,9 +1,9 @@
 {
   "name": "all-round-calculator",
-  "version": "1.0.0",
+  "version": "1.3.0",
   "description": "All types of calculator in one library",
   "main": "index.js",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,7 +12,11 @@
     "url": "https://github.com/Susmita-Dey/all-round-calculator.git"
   },
   "keywords": [
-    "calculator"
+    "calculator",
+    "module",
+    "arithmetic calculator",
+    "currency converter",
+    "all-types-calculator"
   ],
   "author": "Susmita Dey",
   "license": "MIT",
