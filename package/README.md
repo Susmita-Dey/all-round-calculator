@@ -15,3 +15,6 @@ const calculator = require('all-round-calculator')
 ```
 
 See the [documentation](https://github.com/Susmita-Dey/all-round-calculator/tree/main/docs) for more details.
+
+Built with ❤
+Copyright [@Susmita-Dey](https://github.com/Susmita-Dey). All rights reserved. 
