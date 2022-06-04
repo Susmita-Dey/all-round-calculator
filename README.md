@@ -4,8 +4,7 @@ An npm library package to calculate everything you want.
 ![GitHub top language](https://img.shields.io/github/languages/top/Susmita-Dey/all-round-calculator)
 
 * Check out our npm package on [npmjs.org](https://www.npmjs.com/package/all-round-calculator).
-* Check out the documentation [here](https://github.com/Susmita-Dey/all-round-calculator/blob/main/docs).
-* Check out the **installation guidelines** [here](https://github.com/Susmita-Dey/all-round-calculator/blob/main/docs/install.md).
+* Check out the documentation [here](https://all-round-calculator.vercel.app).
 
 ---
 
