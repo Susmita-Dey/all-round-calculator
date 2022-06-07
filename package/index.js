@@ -1,4 +1,7 @@
 const { getCurrency } = require("./Functions/Currency");
+const doFactorial = require("./Functions/Factorial");
+const { doMax, doMin } = require("./Functions/Max.Min.Array")
+
 /**
  * Returns the sum of two numbers
  *
@@ -221,4 +224,7 @@ module.exports = {
   toDec,
   doDecr,
   doInc,
+  doFactorial,
+  doMax,
+  doMin
 };

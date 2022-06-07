@@ -19,6 +19,9 @@ Currently we have almost 15+ functions in our npm package. Some of them are list
     * [doMod()](aFunc/doMod.md):- Get the modulus
 
 - Miscellaneous Functions
+    * [doMax()](mFunction/doMax.md):- Maximum element of Array
+    * [doMin()](mFunction/doMin.md):- Minimum element of Array
+    * [doFactorial()](mFunction/doFactorial.md):- Factorial of a number
     * [doReverse()](mFunc/doReverse.md):- Reverse number
     * [calcAge()](mFunc/calcAge.md):- Calculate age
     * [calcLoan()](mFunc/calcLoan.md):- Calculate total amount of loan
