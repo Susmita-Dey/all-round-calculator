@@ -1,43 +1,50 @@
+const { getCurrency } = require("./Functions/Currency");
+const doFactorial = require("./Functions/Factorial");
+const { doMax, doMin } = require("./Functions/Max.Min.Array")
+
 /**
-  * Returns the sum of two numbers
-  *
-  * @param {number} num1 The first number to be added.
-  * @param {number} num2 The Second Number to be added.
-  * @return {number} sum of the two numbers
-*/
+ * Returns the sum of two numbers
+ *
+ * @param {number} num1 The first number to be added.
+ * @param {number} num2 The Second Number to be added.
+ * @return {number} sum of the two numbers
+ */
 function doAdd(num1, num2) {
   return num1 + num2;
 }
 
 /**
-  * Returns the sum of the numbers in an array
-  *
-  * @param {array} nums An array of numbers
-  * @return {number} sum of all the numbers in an array
-*/
+ * Returns the sum of the numbers in an array
+ *
+ * @param {array} nums An array of numbers
+ * @return {number} sum of all the numbers in an array
+ */
 function doAddN(nums) {
-  const numbers = nums.reduce((totalVal, currentVal) => totalVal + currentVal, 0)
-  return numbers
+  const numbers = nums.reduce(
+    (totalVal, currentVal) => totalVal + currentVal,
+    0
+  );
+  return numbers;
 }
 
 /**
-  * Returns the subtraction of two numbers
-  *
-  * @param {number} num1 First number 
-  * @param {number} num2 Second number
-  * @return The subtraction of the two numbers
-*/
+ * Returns the subtraction of two numbers
+ *
+ * @param {number} num1 First number
+ * @param {number} num2 Second number
+ * @return The subtraction of the two numbers
+ */
 function doSub(num1, num2) {
   return num1 - num2;
 }
 
 /**
-  * Returns the positive subtraction of two numbers by checking if the first number is bigger or not
-  *
-  * @param {number} num1 First number
-  * @param {number} num2 Second number
-  * @return {number} The positive subtraction of the two numbers
-*/
+ * Returns the positive subtraction of two numbers by checking if the first number is bigger or not
+ *
+ * @param {number} num1 First number
+ * @param {number} num2 Second number
+ * @return {number} The positive subtraction of the two numbers
+ */
 function doPositiveSub(num1, num2) {
   if (num1 > num2) {
     return num1 - num2;
@@ -47,22 +54,22 @@ function doPositiveSub(num1, num2) {
 }
 
 /**
-  * Multiplication of two numbers
-  *
-  * @param {number} First number
-  * @param {number} Second number
-  * @return {number} The muliplication of the two numbers
-*/
+ * Multiplication of two numbers
+ *
+ * @param {number} First number
+ * @param {number} Second number
+ * @return {number} The muliplication of the two numbers
+ */
 function doMul(num1, num2) {
   return num1 * num2;
 }
 
 /**
-  * Multiplication of all numbers in the array
-  * 
-  * @param {array} Array of numbers
-  * @return {number} Multiplication of all the numbers
-*/
+ * Multiplication of all numbers in the array
+ *
+ * @param {array} Array of numbers
+ * @return {number} Multiplication of all the numbers
+ */
 function doMulN(nums) {
   let multiply = 1;
   for (let index = 0; index < nums.length; index++) {
@@ -73,19 +80,19 @@ function doMulN(nums) {
 
 // Dividing 2 numbers
 /**
-  * Division of two numbers
-  *
-  * @param {number} num1 The first number
-  * @param {number} num2 The second number
-  * @return {number} The Division of the two numbers
-*/
+ * Division of two numbers
+ *
+ * @param {number} num1 The first number
+ * @param {number} num2 The second number
+ * @return {number} The Division of the two numbers
+ */
 function doDiv(num1, num2) {
   return num1 / num2;
 }
 
 // reversing number from input
 function doReverse(num) {
-  num *= -1
+  num *= -1;
   return num;
 }
 
@@ -102,19 +109,19 @@ function doDecr(num) {
 // convert number ot decimal
 
 function toDec(num) {
- return num.toString(10);
+  return num.toString(10);
 }
 
 // convert number to binary
 
 function toBin(num) {
- return num.toString(2);
+  return num.toString(2);
 }
 
 // convert number to hex
 
 function toHex(num) {
- return num.toString(16);
+  return num.toString(16);
 }
 
 // convert number to octal
@@ -131,22 +138,22 @@ function toTri(num) {
 
 // Getting the modulus
 /**
-  * Modulus of two numbers
-  *
-  * @param {number} num1 The first number
-  * @param {number} num2 The second number
-  * @return {number} The modulus of the two numbers
-*/
+ * Modulus of two numbers
+ *
+ * @param {number} num1 The first number
+ * @param {number} num2 The second number
+ * @return {number} The modulus of the two numbers
+ */
 function doMod(num1, num2) {
   return num1 % num2;
 }
 
 /**
-  * Calculating the age
-  *
-  * @param {String} dateString The date of birth should be in this format 'MM-DD-YY'
-  * @return The age of the person
-*/
+ * Calculating the age
+ *
+ * @param {String} dateString The date of birth should be in this format 'MM-DD-YY'
+ * @return The age of the person
+ */
 function calcAge(dateString) {
   let today = new Date();
   let birthDate = new Date(dateString);
@@ -159,25 +166,25 @@ function calcAge(dateString) {
 }
 
 /**
-  * Calculating the total amount of loan
-  *
-  * @param {number} amount The amount
-  * @param {number} rate The rate 
-  * @param {number} month The number of months
-  * @return {number} Total amount of loan
-*/
+ * Calculating the total amount of loan
+ *
+ * @param {number} amount The amount
+ * @param {number} rate The rate
+ * @param {number} month The number of months
+ * @return {number} Total amount of loan
+ */
 function calcLoan(amount, rate, month) {
   let interest = (amount * (rate * 0.01)) / month;
   let total_amount = amount / month + interest;
-  return ("Total Amount: " + total_amount);
+  return "Total Amount: " + total_amount;
 }
 
 /**
-  * Calculating time
-  *
-  * @param {number} seconds The number of seconds
-  * @return {String} The date
-*/
+ * Calculating time
+ *
+ * @param {number} seconds The number of seconds
+ * @return {String} The date
+ */
 function timeCalc(seconds) {
   let y = Math.floor(seconds / 31536000);
   let mo = Math.floor((seconds % 31536000) / 2628000);
@@ -194,6 +201,7 @@ function timeCalc(seconds) {
   let sDisplay = s > 0 ? s + (s === 1 ? " second" : " seconds ") : "";
   return yDisplay + moDisplay + dDisplay + hDisplay + mDisplay + sDisplay;
 }
+
 
 // Currency Converter
 /**
