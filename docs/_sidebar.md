@@ -23,6 +23,9 @@
     * [doMod()](aFunc/doMod.md)
 
 * **Miscellaneous Functions**
+    * [doMax()](mFunc/doMax.md)
+    * [doMin()](mFunc/doMin.md)
+    * [doFactorial()](mFunc/doFactorial.md)
     * [doReverse()](mFunc/doReverse.md)
     * [calcAge()](mFunc/calcAge.md)
     * [calcLoan()](mFunc/calcLoan.md)
