@@ -1,0 +1,19 @@
+name: Creating an issue in All round Calculator
+description: I would like to create an issue in this project
+title: "Create an issue"
+labels: [enhancement]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      placeholder: Insert your name here
+    validations:
+      required: true
+  - type: textarea
+    id: Additional
+    attributes:
+      label: Describe your Issue
+      description: Elaborate changes you suggest
+    validations:
+      required: true
