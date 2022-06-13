@@ -28,6 +28,9 @@ Thanks a lot for spending your time helping all-round-calculator grow. Thanks a 
 ## Support 🙏 
 
 This project needs a ⭐️ from you. Don't forget to leave a star ⭐. Also feel free to [sponsor](https://github.com/sponsors/Susmita-Dey) us.
+
+<a href="https://www.producthunt.com/posts/all-round-calculator?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-all&#0045;round&#0045;calculator" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=349317&theme=light" alt="all&#0045;round&#0045;calculator - An&#0032;npm&#0032;library&#0032;package&#0032;to&#0032;calculate&#0032;everything&#0032;you&#0032;want&#0046; | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+
 <!-- <iframe src="https://github.com/sponsors/Susmita-Dey/button" title="Sponsor Susmita-Dey" height="35" width="116" style="border: 0;"></iframe> -->
 <!-- <p align="center">
   Show some ❤ by starring the repository.
