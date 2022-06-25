@@ -14,17 +14,15 @@ function doAdd(num1, num2) {
 }
 
 /**
- * Returns the sum of the numbers in an array
+ * Returns the sum of multiple numbers
  *
- * @param {array} nums An array of numbers
- * @return {number} sum of all the numbers in an array
+ * @param {array} ...args Multiple Numbers
+ * @return {number} sum of all the numbers passed as arument
  */
-function doAddN(nums) {
-  const numbers = nums.reduce(
-    (totalVal, currentVal) => totalVal + currentVal,
-    0
-  );
-  return numbers;
+
+function doAddN(...args) {
+  const number = args.reduce((a, b) => a + b, 0);
+  return number;
 }
 
 /**
@@ -65,18 +63,17 @@ function doMul(num1, num2) {
 }
 
 /**
- * Multiplication of all numbers in the array
+ * Multiplication of all numbers passed as argument
  *
- * @param {array} Array of numbers
+ * @param {array} Multiple numbers
  * @return {number} Multiplication of all the numbers
  */
-function doMulN(nums) {
-  let multiply = 1;
-  for (let index = 0; index < nums.length; index++) {
-    multiply *= nums[index];
-  }
-  return multiply;
+
+function doMulN(...args) {
+  const number = args.reduce((a, b) => a * b, 1);
+  return number;
 }
+
 
 // Dividing 2 numbers
 /**
