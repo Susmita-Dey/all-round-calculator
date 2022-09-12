@@ -5,6 +5,7 @@ An npm library package to calculate everything you want.
 
 * Check out our npm package on [npmjs.org](https://www.npmjs.com/package/all-round-calculator).
 * Check out the documentation [here](https://all-round-calculator.vercel.app).
+* **Note** that the documentation site is made using **[docsify](https://docsify.js.org/#/)**
 
 ---
 
@@ -18,6 +19,19 @@ An npm library package to calculate everything you want.
 ## License 🛡️ 
 
 all-round-calculator is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Open Source Programs
+ <a href="https://hacktoberfest.com/">
+ <img width="1200" alt="Email Banners-Dark" src="https://user-images.githubusercontent.com/79099734/189589410-ca17afb8-5855-4316-918a-054f27594809.png">
+ </a>
+
+## 😎 Project Maintainer
+
+<table>
+  <tr>
+<td align="center"><a href="https://github.com/Susmita-Dey"><img src="https://avatars.githubusercontent.com/u/79099734?v=4" width="100px;" alt=""/><br /><sub><b>Susmita Dey</b></sub></a></td>
+  </tr>
+</table>
 
 ## Thanks to all Contributors 💪 
 
