@@ -1,7 +1,7 @@
 name: Creating an issue in All round Calculator
 description: I would like to create an issue in this project
 title: "Create an issue"
-labels: [enhancement]
+labels: [enhancement, hacktoberfest]
 body:
   - type: input
     id: name
