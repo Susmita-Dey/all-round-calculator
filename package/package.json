@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/Susmita-Dey/all-round-calculator/issues"
   },
-  "homepage": "https://github.com/Susmita-Dey/all-round-calculator#readme"
+  "homepage": "https://github.com/Susmita-Dey/all-round-calculator#readme",
+  "dependencies": {
+    "axios": "^0.27.2"
+  }
 }
