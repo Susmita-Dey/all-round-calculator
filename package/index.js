@@ -1,7 +1,7 @@
 const { getCurrency } = require("./Functions/Currency");
 const doFactorial = require("./Functions/Factorial");
 const { doMax, doMin } = require("./Functions/Max.Min.Array");
-
+const {daysLeft} = require("./Functions/Time");
 /**
  * Returns the sum of two numbers
  *
@@ -294,4 +294,5 @@ module.exports = {
   doFactorial,
   doMax,
   doMin,
+  daysLeft
 };
