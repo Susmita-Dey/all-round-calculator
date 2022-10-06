@@ -99,13 +99,13 @@ function doReverse(num) {
 }
 
 // add one to input number
-function doInc(num) {
-  return num + 1;
+function doInc(num, step = 1) {
+  return num + step;
 }
 
 // decrement input by one
-function doDecr(num) {
-  return num - 1;
+function doDecr(num, step = 1) {
+  return num - step;
 }
 
 // Getting the modulus
