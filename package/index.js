@@ -120,6 +120,11 @@ function doMod(num1, num2) {
   return num1 % num2;
 }
 
+// get square root of a number
+function root(num) {
+  return Math.sqrt(num);
+}
+
 // Export functions
 module.exports = {
   doAdd,
@@ -130,6 +135,7 @@ module.exports = {
   doMulN,
   doDiv,
   doMod,
+  root,
   calcAge,
   calcLoan,
   timeCalc,
