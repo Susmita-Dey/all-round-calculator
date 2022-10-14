@@ -125,6 +125,18 @@ function root(num) {
   return Math.sqrt(num);
 }
 
+// Getting the percentage 
+/**
+ * percentage of two numbers
+ *
+ * @param {number} partialValue The first number
+ * @param {number} totalValue The second number
+ * @return {number} The percentage of the two numbers
+ */
+function percentage(partialValue, totalValue) {
+  return (100 * partialValue) / totalValue;
+} 
+
 // Export functions
 module.exports = {
   doAdd,
@@ -136,6 +148,7 @@ module.exports = {
   doDiv,
   doMod,
   root,
+  percentage,
   calcAge,
   calcLoan,
   timeCalc,
