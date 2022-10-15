@@ -137,6 +137,16 @@ function percentage(partialValue, totalValue) {
   return (100 * partialValue) / totalValue;
 } 
 
+/**
+ * Calculate power of a number, as x^y
+ * @param {number} base x -> base number, whose power is calculated
+ * @param {number} exponent y -> power/index for the number
+ * @returns 
+ */
+function doPower(base, exponent) {
+  return Math.pow(base, exponent);
+}
+
 // Export functions
 module.exports = {
   doAdd,
@@ -165,4 +175,5 @@ module.exports = {
   doFactorial,
   doMax,
   doMin,
+  doPower,
 };
