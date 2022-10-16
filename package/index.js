@@ -137,6 +137,11 @@ function percentage(partialValue, totalValue) {
   return (100 * partialValue) / totalValue;
 } 
 
+// generate random number
+function getRandom() {
+  return Math.floor(Math.random() * 1000);
+}
+
 // Export functions
 module.exports = {
   doAdd,
@@ -149,6 +154,7 @@ module.exports = {
   doMod,
   root,
   percentage,
+  getRandom,
   calcAge,
   calcLoan,
   timeCalc,
