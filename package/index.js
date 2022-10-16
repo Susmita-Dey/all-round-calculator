@@ -137,6 +137,17 @@ function percentage(partialValue, totalValue) {
   return (100 * partialValue) / totalValue;
 } 
 
+/**
+ * Temperature in fahrenheit from celsius
+ *
+ * @param {number}  value in celsius to be converted.
+ * @return {number} Connverted value in fahrenheit 
+ */
+ function cToF(celsius) 
+{
+  return (celsius * 1.8) + 32;;
+}
+
 // Export functions
 module.exports = {
   doAdd,
@@ -165,4 +176,5 @@ module.exports = {
   doFactorial,
   doMax,
   doMin,
+  cToF
 };
