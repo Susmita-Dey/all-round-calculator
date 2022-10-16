@@ -135,7 +135,12 @@ function root(num) {
  */
 function percentage(partialValue, totalValue) {
   return (100 * partialValue) / totalValue;
-} 
+}
+
+// Get the sine of value 
+function calculatesin(num) {
+  return Math.sin((Math.PI/180)*num);
+}
 
 // Export functions
 module.exports = {
@@ -165,4 +170,5 @@ module.exports = {
   doFactorial,
   doMax,
   doMin,
+  calculatesin,
 };
