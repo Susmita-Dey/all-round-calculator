@@ -176,5 +176,6 @@ module.exports = {
   doFactorial,
   doMax,
   doMin,
+  calculatesin,
   cToF,
 };
