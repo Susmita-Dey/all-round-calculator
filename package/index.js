@@ -126,7 +126,7 @@ function root(num) {
 }
 
 // get log value of a number
-function log(num) {
+function getLogValue(num) {
   return Math.log(num);
 }
 
@@ -153,7 +153,7 @@ module.exports = {
   doDiv,
   doMod,
   root,
-  log,
+  getLogValue,
   percentage,
   calcAge,
   calcLoan,
