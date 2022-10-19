@@ -125,6 +125,11 @@ function root(num) {
   return Math.sqrt(num);
 }
 
+// get log value of a number
+function getLogValue(num) {
+  return Math.log(num);
+}
+
 // Getting the percentage 
 /**
  * percentage of two numbers
@@ -158,6 +163,7 @@ module.exports = {
   doDiv,
   doMod,
   root,
+  getLogValue,
   percentage,
   getRandom,
   calcAge,
