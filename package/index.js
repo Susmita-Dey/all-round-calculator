@@ -125,6 +125,11 @@ function root(num) {
   return Math.sqrt(num);
 }
 
+// get log value of a number
+function getLogValue(num) {
+  return Math.log(num);
+}
+
 // Getting the percentage 
 /**
  * percentage of two numbers
@@ -135,7 +140,17 @@ function root(num) {
  */
 function percentage(partialValue, totalValue) {
   return (100 * partialValue) / totalValue;
-} 
+}
+
+// Get the sine of value 
+function calculatesin(num) {
+  return Math.sin((Math.PI/180)*num);
+}
+
+// generate random number
+function getRandom() {
+  return Math.floor(Math.random() * 1000);
+}
 
 /**
  * Temperature in fahrenheit from celsius
@@ -159,7 +174,9 @@ module.exports = {
   doDiv,
   doMod,
   root,
+  getLogValue,
   percentage,
+  getRandom,
   calcAge,
   calcLoan,
   timeCalc,
