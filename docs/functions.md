@@ -18,6 +18,7 @@ Currently we have almost 15+ functions in our npm package. Some of them are list
     <!-- * [toOct()](aFunc/toOct.md):- Decimal to Octal -->
     <!-- * [toTri()](aFunc/toTri.md):- Decimal to Trinary -->
   * [doMod()](aFunc/doMod.md):- Get the modulus
+  * [doPower()](aFunc/doPower.md):- Get the power/exponent of a number
 
 * ** Miscellaneous Functions**
 
