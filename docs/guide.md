@@ -7,8 +7,8 @@ Before installation, please make sure you have already installed the following t
 
 # Installation Guidelines <!-- {docsify-ignore} -->
 
-1. Create a folder of your project.    `mkdir <folder-name>`
-2. Go inside the folder.    `cd <folder-name>`
+1. Make a directory for your project.    `mkdir <directory-name>`
+2. Go to the directory.    `cd <directory-name>`
 3. Use the following command in your terminal.
 ```npm
 npm i all-round-calculator
