@@ -15,6 +15,7 @@
     * [doMulN()](aFunc/doMulN.md)
     * [doDiv()](aFunc/doDiv.md)
     * [doInc()](aFunc/doInc.md)
+    *  [doPower()](aFunc/doPower.md)
     * [doDecr()](aFunc/doDecr.md)
     <!-- * [toBin()](aFunc/toBin.md) -->
     <!-- * [toHex()](aFunc/toHex.md) -->
@@ -31,3 +32,4 @@
     * [calcLoan()](mFunc/calcLoan.md)
     * [timeCalc()](mFunc/timeCalc.md)
     * [getCurrency()](mFunc/getCurrency.md)
+    * [getScientificValue()](mFunc/getScientificValue.md)
