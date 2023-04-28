@@ -3,10 +3,16 @@ const doFactorial = require("./Functions/Factorial");
 const { doMax, doMin } = require("./Functions/Max.Min.Array");
 const { calcAge } = require("./Functions/AgeCalculation");
 const { calcLoan } = require("./Functions/LoanCalculation");
-const { toDec, toBin, toHex, toOct, toTri } = require("./Functions/RadixConversion");
+const {
+  toDec,
+  toBin,
+  toHex,
+  toOct,
+  toTri,
+} = require("./Functions/RadixConversion");
 const { getScientificValue } = require("./Functions/ScientificCalculation");
 const { timeCalc } = require("./Functions/TimeCalculation");
-
+const {daysLeft} = require("./Functions/Time");
 /**
  * Returns the sum of two numbers
  *
@@ -78,7 +84,6 @@ function doMulN(...args) {
   const number = args.reduce((a, b) => a * b, 1);
   return number;
 }
-
 
 // Dividing 2 numbers
 /**
@@ -204,6 +209,7 @@ module.exports = {
   doFactorial,
   doMax,
   doMin,
+  daysLeft,
   doPower,
   calculatesin,
   cToF,
