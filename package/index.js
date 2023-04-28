@@ -153,6 +153,7 @@ function getRandom() {
 }
 
 /**
+
  * Temperature in fahrenheit from celsius
  *
  * @param {number}  value in celsius to be converted.
@@ -161,6 +162,16 @@ function getRandom() {
  function cToF(celsius) 
 {
   return (celsius * 1.8) + 32;;
+}
+
+/**
+ * Calculate power of a number, as x^y
+ * @param {number} base x -> base number, whose power is calculated
+ * @param {number} exponent y -> power/index for the number
+ * @returns 
+ */
+function doPower(base, exponent) {
+  return Math.pow(base, exponent);
 }
 
 // Export functions
@@ -193,6 +204,7 @@ module.exports = {
   doFactorial,
   doMax,
   doMin,
+  doPower,
   calculatesin,
   cToF,
 };
