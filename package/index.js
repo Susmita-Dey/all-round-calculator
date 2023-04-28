@@ -125,6 +125,60 @@ function doMod(num1, num2) {
   return num1 % num2;
 }
 
+// get square root of a number
+function root(num) {
+  return Math.sqrt(num);
+}
+
+// get log value of a number
+function getLogValue(num) {
+  return Math.log(num);
+}
+
+// Getting the percentage 
+/**
+ * percentage of two numbers
+ *
+ * @param {number} partialValue The first number
+ * @param {number} totalValue The second number
+ * @return {number} The percentage of the two numbers
+ */
+function percentage(partialValue, totalValue) {
+  return (100 * partialValue) / totalValue;
+}
+
+// Get the sine of value 
+function calculatesin(num) {
+  return Math.sin((Math.PI/180)*num);
+}
+
+// generate random number
+function getRandom() {
+  return Math.floor(Math.random() * 1000);
+}
+
+/**
+
+ * Temperature in fahrenheit from celsius
+ *
+ * @param {number}  value in celsius to be converted.
+ * @return {number} Converted value in fahrenheit 
+ */
+ function cToF(celsius) 
+{
+  return (celsius * 1.8) + 32;;
+}
+
+/**
+ * Calculate power of a number, as x^y
+ * @param {number} base x -> base number, whose power is calculated
+ * @param {number} exponent y -> power/index for the number
+ * @returns 
+ */
+function doPower(base, exponent) {
+  return Math.pow(base, exponent);
+}
+
 // Export functions
 module.exports = {
   doAdd,
@@ -135,6 +189,10 @@ module.exports = {
   doMulN,
   doDiv,
   doMod,
+  root,
+  getLogValue,
+  percentage,
+  getRandom,
   calcAge,
   calcLoan,
   timeCalc,
@@ -151,5 +209,8 @@ module.exports = {
   doFactorial,
   doMax,
   doMin,
-  daysLeft
+  daysLeft,
+  doPower,
+  calculatesin,
+  cToF,
 };

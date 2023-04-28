@@ -4,7 +4,7 @@
 
 # Steps to import
 
-1. Create a file called `script.js` or `app.js` inside your project folder after installing the package. If you haven't installed yet, check out the [Quick Start Guide](guide.md) for mode details.
+1. Create a file named `script.js` or `app.js` inside your project directory after installation of the package. If you haven't installed yet, check out the [Quick Start Guide](guide.md) for mode details.
 
 2. Use the following code:
 ```js
