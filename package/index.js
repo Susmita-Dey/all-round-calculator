@@ -179,6 +179,7 @@ function doPower(base, exponent) {
   return Math.pow(base, exponent);
 }
 
+function { decimalToFunction } = require("./Functions/DecimalToFraction");
 // Export functions
 module.exports = {
   doAdd,
@@ -213,4 +214,6 @@ module.exports = {
   doPower,
   calculatesin,
   cToF,
+
+  decimalToFraction,
 };

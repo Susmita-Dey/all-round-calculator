@@ -1,0 +1,46 @@
+/**
+ * Converts a decimal number to fraction.
+ * @param {number} decimalValue The decimal number to convert to fraction.
+ * @param {number} precision. (e.g., 0.001 for three decimal places).
+ * @returns {string} The fraction in the form "numerator/denominator" or (p/q).
+ */
+function decimalToFraction(decimalValue, precision = 1e-6) {
+  if (Math.abs(decimalValue) < precision) {
+    return '0/1'; //for special case zero
+  }
+
+  let sign = '';
+  if (decimalValue < 0) {
+    sign = '-';
+    decimalValue = Math.abs(decimalValue);
+  }
+
+  let wholePart = Math.floor(decimalValue);
+  let decimalPart = decimalValue - wholePart;
+  let numerator = 1;
+  let denominator = 1;
+  let previousDenominator = 0;
+  let currentDenominator = 1;
+  let tempNumerator;
+
+  while (Math.abs(decimalPart - wholePart) > precision * decimalPart) {
+    decimalPart = 1 / (decimalPart - wholePart);
+    tempNumerator = numerator;
+    numerator = wholePart * numerator + previousDenominator;
+    previousDenominator = currentDenominator;
+    currentDenominator = wholePart * currentDenominator + tempNumerator;
+    wholePart = Math.floor(decimalPart);
+  }
+
+  numerator = sign + (numerator + wholePart * currentDenominator);
+  denominator = currentDenominator;
+
+  return `${numerator}/${denominator}`;
+}
+
+// Example:
+//const decimal = 0.625;
+//const fraction = decimalToFraction(decimal);
+// Output: "5/8"
+
+module.exports = { decimalToFraction };
