@@ -2,7 +2,7 @@
  * @param {number} numValue The converted value
  * @param {String} stringValue   Choose from sin, cos, or tan
  */
- function getInverseTrigValue(numValue, stringValue) {
+ function getInverseTrigValues(numValue, stringValue) {
     let num = numValue;
     let strValue = stringValue;
     let output = 0;
@@ -28,4 +28,4 @@
     return output;
   }
 
-  module.exports = { getInverseTrigValue};
+  module.exports = { getInverseTrigValues};
