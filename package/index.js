@@ -13,6 +13,7 @@ const {
 const { getScientificValue } = require("./Functions/ScientificCalculation");
 const { timeCalc } = require("./Functions/TimeCalculation");
 const {daysLeft} = require("./Functions/Time");
+const { getInverseTrigValues } = require("./Functions/InverseTrigonometricValues");
 /**
  * Returns the sum of two numbers
  *
@@ -213,4 +214,5 @@ module.exports = {
   doPower,
   calculatesin,
   cToF,
+  getInverseTrigValues,
 };
